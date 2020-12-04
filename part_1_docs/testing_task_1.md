@@ -17,23 +17,22 @@ Only comment on errors that would stop the tests running.
 class CardGame:
 
 
-  def check_for_ace(self, card):
+  def check_for_ace(self, card): # colon sign for else clause is missing, so the subsequent keyword will not catch anything missed by the preceding conditions.  the assignment operator is confused with comparison operator, where the card.value property is not being checked for a value, but rather assigned one before the logic is checked.
     if card.value = 1:
       return True
     else
       return False
    
 
-  dif highest_card(self, card1 card2):
-  if card1.value > card2.value:
+  dif highest_card(self, card1 card2):  # spelling for function keyword is incorrect, and comma seperating parameter variables is missing.  statement should be indeneted and returning 'card' in the conditional statement, as opposed to the named object instances (card1, card2), would also prevent the test from running properly.
+    if card1.value > card2.value:
     return card
   else:
     return card2
   
 
 
-def cards_total(self, cards):
-  total
+def cards_total(self, cards): # Function header isn't indented. 'total' variable has no value and needs to return string version of object.
   for card in cards:
     total += card.value
     return "You have a total of" + total
